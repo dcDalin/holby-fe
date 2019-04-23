@@ -1,17 +1,14 @@
 import React from 'react';
-import { Container, Menu } from 'semantic-ui-react';
+import styled from 'styled-components';
+
+const Heading = styled.h1`
+  ${({ theme }) => theme.mobile`
+      color: red;
+   `}
+`;
 
 const Nav = () => {
-  return (
-    <Menu fixed="top" inverted>
-      <Container>
-        <Menu.Item as="a" header>
-          Holby Training Solutions
-        </Menu.Item>
-        <Menu.Item as="a">Home</Menu.Item>
-      </Container>
-    </Menu>
-  );
+  return <Heading>This is the Navigation</Heading>;
 };
 
 export default Nav;
