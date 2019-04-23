@@ -33,5 +33,5 @@ const Theme = ({ children }) => (
 export { Theme, GlobalStyle };
 
 Theme.propTypes = {
-  children: PropTypes.string.isRequired,
+  children: PropTypes.any.isRequired,
 };
