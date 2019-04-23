@@ -1,12 +1,12 @@
 import React from 'react';
 import { GlobalStyle, Theme } from '../../theme';
-import Nav from '../Nav';
+import Router from '../Router';
 
 const App = () => {
   return (
     <Theme>
       <>
-        <Nav />
+        <Router />
         <GlobalStyle />
       </>
     </Theme>
