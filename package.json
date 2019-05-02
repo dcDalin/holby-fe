@@ -9,7 +9,8 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
     "serve": "^11.0.0",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "styled-icons": "^7.11.0"
   },
   "scripts": {
     "dev": "react-scripts start",

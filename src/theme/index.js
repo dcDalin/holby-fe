@@ -13,10 +13,10 @@ const GlobalStyle = createGlobalStyle`
   }
   html {
    box-sizing: border-box;
-   font-family: 'Montserrat';
+   font-family: 'Raleway', sans-serif;
   }
   body {
-    background-color: rgba(var(--purp), 0.2);
+    // background-color: rgba(var(--purp), 0.2);
   }
 `;
 
