@@ -1,16 +1,6 @@
 import React from 'react';
-import Carousel from '../../components/Carousel';
-import AboutSection from '../../components/AboutSection';
-import TestimonialSection from '../../components/testimonials';
-import Footer from '../../components/footer';
+import Carousel from './Carousel';
 
-const Home = () => (
-  <>
-    <Carousel />
-    <AboutSection />
-    <TestimonialSection />
-    <Footer />
-  </>
-);
+const Home = () => <Carousel />;
 
 export default Home;
