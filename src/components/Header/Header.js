@@ -1,42 +1,28 @@
+import { Grid } from 'grommet';
 import React from 'react';
-import styled from 'styled-components';
-import NavItems from '../NavItems';
-import Auth from '../Auth';
+import LogoItems from './LogoItems';
+import MainNavItems from './MainNavItems';
+import TopNavItems from './TopNavItems';
 
-const HeaderWrapper = styled.header`
-  height: 100px;
-  border-bottom: 2px solid #eaeaea;
-`;
-const CompanyLogo = styled.div`
-  display: inline-block;
-  position: relative;
-  height: 55px;
-  width: 55px;
-  left: 1.5%;
-  top: 20px;
-  background-color: #ff8a80;
-`;
-const AppTitle = styled.div`
-  display: inline-block;
-  position: relative;
-  left: 2%;
-  color: #02537f;
-  font-size: 30px;
-  font-weight: 200;
-  font-family: 'Poiret One', cursive;
-  letter-spacing: 2px;
-  text-shadow: 0.5px 0.5px #02537f;
-`;
+const Header = () => (
+  <Grid
+    rows={['xxsmall', 'xsmall']}
+    columns={['1/3', '2/3']}
+    gap="none"
+    areas={[
+      { name: 'top-nav-items', start: [1, 0], end: [1, 0] },
+      { name: 'logo', start: [0, 0], end: [0, 1] },
+      { name: 'nav', start: [1, 1], end: [1, 1] },
+    ]}
+  >
+    {/* Top Navigation Items e.g. Social Icons and shit */}
+    <TopNavItems />
 
-const Header = () => {
-  return (
-    <HeaderWrapper>
-      <CompanyLogo />
-      <AppTitle>Holby Training Solutions</AppTitle>
-      <NavItems />
-      <Auth />
-    </HeaderWrapper>
-  );
-};
+    {/* The Logo goes here */}
+    <LogoItems />
+
+    <MainNavItems />
+  </Grid>
+);
 
 export default Header;
