@@ -1,4 +1,4 @@
-import { Box, Button, Carousel, Grid, Image, Paragraph, Text } from 'grommet';
+import { Box, Button, Carousel, Grid, Image, Paragraph, Tab, Tabs, Text } from 'grommet';
 import React from 'react';
 import styled from 'styled-components';
 import ImageOne from '../../../assets/images/slider/1.jpg';
@@ -86,6 +86,39 @@ const CarouselWrapper = () => (
         />
       </Box>
     </Grid>
+
+    <Box
+      align="start"
+      animation="fadeIn"
+      border={{
+        color: 'fadeGreen',
+        size: 'medium',
+        side: 'top',
+      }}
+    >
+      <Text
+        margin={{
+          top: 'xlarge',
+          bottom: 'small',
+        }}
+        size="xxlarge"
+        weight="bold"
+        color="rgba(44, 62, 80,1.0)"
+      >
+        Courses
+      </Text>
+      <Tabs>
+        <Tab title="Bronze Level">
+          <Box pad="xxlarge" />
+        </Tab>
+        <Tab title="Silver Level">
+          <Box pad="xxlarge">Silver</Box>
+        </Tab>
+        <Tab title="Gold Level">
+          <Box pad="xxlarge">Gold</Box>
+        </Tab>
+      </Tabs>
+    </Box>
   </>
 );
 
